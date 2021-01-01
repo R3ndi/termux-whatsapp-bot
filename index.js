@@ -15,13 +15,13 @@ const menu = require("./lib/menu.js")
 
 const apivhtear = 'Apikey vhtear';
 const apibarbar = 'Apikey mhankbarbar';
-const BotName = 'Nama bot'; 
-const instagram = 'Instagram kamu'; 
-const aktif = 'Kapan bot aktif';
+const BotName = 'RendiBot'; 
+const instagram = 'rendi_kurniawan02'; 
+const aktif = 'g menentu';
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Nama kamu\n' // Nama kamu
-            + 'ORG:Nama bot;\n' // Nama bot
+            + 'FN:Rendi kurniawan\n' // Nama kamu
+            + 'ORG:RendiBot;\n' // Nama bot
             + 'TEL;type=CELL;type=VOICE;waid=6280000000000:+62 000-0000-0000\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 const
@@ -115,10 +115,11 @@ if (text.includes('.apakah')){
 const teks = text.replace(/./, '')
 const truth =[
 'Iya',
+	
 'Tidak',
 'Bisa Jadi',
 'Coba tanyakan lagi',
-'Mungkin',
+'Lu mimpi?',
 '']
 const ttrth = truth[Math.floor(Math.random() * truth.length)]
 conn.sendMessage(id, 'Pertanyaan : *'+teks+'*\n\nJawaban : '+ ttrth, MessageType.text, { quoted: m })
